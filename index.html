@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="slider-for">
+    <img src="./images/1.jpg">
+    <img src="./images/2.jpg">
+    <img src="./images/3.jpg">
+
+</div>
+<div class="slider-nav">
+    <img src="./images/1.jpg">
+    <img src="./images/2.jpg">
+    <img src="./images/3.jpg">
+    <img src="./images/1.jpg">
+    <img src="./images/2.jpg">
+    <img src="./images/3.jpg">
+</div>
+
+<div class="fancy">
+<a data-fancybox href="https://www.youtube.com/https://youtu.be/8KauNp5rk38">
+    НАЖИМАТЬ СЮДА
+</a>
+</div>
+
+
+<script  type="text/javascript" src="./js/jquery-migrate.js"></script>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+</script>
+</body>
+</html>
